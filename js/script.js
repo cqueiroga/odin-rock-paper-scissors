@@ -3,24 +3,25 @@
 const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
+let output = document.getElementById("output");
 
 // Add event listners to each of the player options
 rock.addEventListener("click", function () {
 	const playerSelection = rock.value;
 	const computerSelection = getComputerChoice();
-	console.log(playRound(playerSelection, computerSelection));
+	output.innerHTML = playRound(playerSelection, computerSelection);
 });
 
 paper.addEventListener("click", function () {
 	const playerSelection = paper.value;
 	const computerSelection = getComputerChoice();
-	console.log(playRound(playerSelection, computerSelection));
+	output.innerHTML = playRound(playerSelection, computerSelection);
 });
 
 scissors.addEventListener("click", function () {
 	const playerSelection = scissors.value;
 	const computerSelection = getComputerChoice();
-	console.log(playRound(playerSelection, computerSelection));
+	output.innerHTML = playRound(playerSelection, computerSelection);
 });
 
 function getComputerChoice() {
