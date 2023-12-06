@@ -72,13 +72,11 @@ function playRound(playerSelection, computerSelection) {
 
 function checkScore() {
 	if (playerScore == 5) {
-		isGameOver = true;
 		output.innerHTML = "Player score: " + playerScore + " <br /> You Win!";
 		document.getElementById("rock").disabled = true;
 		document.getElementById("paper").disabled = true;
 		document.getElementById("scissors").disabled = true;
 	} else if (computerScore == 5) {
-		isGameOver = true;
 		output.innerHTML =
 			"Computer score: " + computerScore + " <br /> Computer Wins!";
 		document.getElementById("rock").disabled = true;
